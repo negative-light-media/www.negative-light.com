@@ -14,6 +14,8 @@ If you are working on a feature set with a group of friends it is suggested that
 - Merge all of your changes into `add-contributors-and-teams-pages`
 - Finally make a pull request for your branch.
 
+If there is a lager set of features being made it may be easier to work from one of our `working` branches. These will always be `*-working`.
+
 ### Prerequisites
 
 Before you make any pull requests into this repository you MUST create an issue that prescribes the change you want to see made.
