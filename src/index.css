@@ -50,7 +50,7 @@ body {
   }
 
   p {
-    color: #adadad;
+    color: white;
 
   }
 
@@ -74,7 +74,7 @@ body {
 	margin: 2;
     display: block;
 	border-radius: 10px;
-    color: #333;
+    color: white;
     padding: 1rem 2rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
@@ -85,13 +85,14 @@ body {
   li a:hover {
     background-color: #555;
     color: white;
+	transform: translatey(-5px);
   }
   .middlelia{
-	background-color: #B4B5B6;
+	background-color: #333;
 	margin: 2;
     display: block;
 	border-radius: 1px;
-    color: #333;
+    color: grey;
     padding: 1rem 2rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
@@ -104,8 +105,8 @@ body {
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 1px;
 	border-bottom-right-radius: 1px;
-    color: #333;
-	background-color: #B4B5B6;
+    color: grey;
+	background-color: #333;
     padding: 1rem 2rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
@@ -119,8 +120,8 @@ body {
 	border-top-right-radius: 1px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-    color: #333;
-	background-color: #B4B5B6;
+    color: grey;
+	background-color: #333;
     padding: 1rem 2rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
