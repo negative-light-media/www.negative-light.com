@@ -1,5 +1,4 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-# Much of this is copied from the vercel/next.js repo https://github.com/vercel/next.js/blob/canary/examples/github-pages/.gitignore
 
 # dependencies
 /node_modules
@@ -11,8 +10,7 @@
 
 # next.js
 /.next/
-# The `out` directory should not be ignored by version control
-# /out/
+#/out/
 
 # production
 /build
@@ -35,5 +33,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-.vscode
