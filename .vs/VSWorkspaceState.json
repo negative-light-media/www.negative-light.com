@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\public",
+    "\\src",
+    "\\src\\app",
+    "\\src\\img"
+  ],
+  "SelectedNode": "\\next.config.js",
+  "PreviewInSolutionExplorer": false
+}
