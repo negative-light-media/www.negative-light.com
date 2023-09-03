@@ -27,10 +27,10 @@ function Home(){
   </header>
   <div class="container">
     <ul>
-    <li><a href="index.html"class="toplia">&#8962; <br/> Home</a></li>
+    <li><a href="/"class="toplia">&#8962; <br/> Home</a></li>
     <li><a href="https://discord.gg/CD8e5avNtn"class="middlelia"><sub><Image src={discord} width ={16} height ={16} alt="discord"></Image></sub> Discord</a></li>
     <li><a href="mailto: code@negative-light.com" class="middlelia"><b>@</b><br/> Contact Email</a></li>
-    <li><a href="aboutnlm.html" class="middlelia"><sub><Image src={nlm} width ={16} height ={16} alt="aboutnlm"></Image></sub> About NLM</a></li>
+    <li><a href="/about" class="middlelia"><sub><Image src={nlm} width ={16} height ={16} alt="aboutnlm"></Image></sub> About NLM</a></li>
     <li><a href="https://linktr.ee/Negative_light" class="bottomlia"><sub><Image src={linktree} width ={16} height ={16} alt="linktree"></Image></sub> Linktree</a></li>
     </ul>
   </div>
