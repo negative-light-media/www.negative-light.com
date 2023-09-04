@@ -38,6 +38,7 @@ function Home(){
     <article>
       <h4>This website is under construction</h4>
       <p><sub>Check our github for details <a href="https://github.com/negative-light-media/www.negative-light.com"><u color="blue">here</u></a></sub></p>
+	  <center><a href="http://www.buymeacoffee.com/widget/page/NegativeLight?description=Support%20me%20on%20Buy%20me%20a%20coffee!&color=%235d2f9d"><img src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="Buy Me A Coffee" style={{a:{height:40, width:40, margin:0, padding:0}}}></img></a></center>
     </article>
   </footer>
 </center>
