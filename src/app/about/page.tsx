@@ -20,7 +20,7 @@ function Home(){
   <header>
     <h2><u>Negative Light Media - About</u></h2>
   </header>
-<div className="container">
+  <div className="container">
 <article><p>Negative Light Media (NLM) is the Media company started by Content Creator Negative_light.
 Our goal is to create things in a strong community, from assets used in videos, to Minecraft Mods, to Content Creator tools we want our code to help others pursue successs.
 NLM provides a place for developers to directly interact with Negaitve_light and help him in productions and for some projects might allow them to get contacts or support from NLM.
