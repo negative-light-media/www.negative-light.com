@@ -10,7 +10,7 @@ function Home(){
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
-<meta charset="UTF-8"></meta>
+<meta charSet="UTF-8"></meta>
 <link rel="icon" type="image/x-icon" href="img/favicon.png"></link>
 <meta name="description" content="Official page for Negative Light Media "></meta>
 <meta name="keywords" content="NLM, media, negative-light, Negative_light, Minecraft, Youtube, Programming, Mods, modding"></meta>
@@ -25,13 +25,13 @@ function Home(){
   <header>
     <h2><u>Negative Light Media</u></h2>
   </header>
-  <div class="container">
+  <div className="container">
     <ul>
-    <li><a href="/"class="toplia">&#8962; <br/> Home</a></li>
-    <li><a href="https://discord.gg/CD8e5avNtn"class="middlelia"><sub><Image src={discord} width ={16} height ={16} alt="discord"></Image></sub> Discord</a></li>
-    <li><a href="mailto: code@negative-light.com" class="middlelia"><b>@</b><br/> Contact Email</a></li>
-    <li><a href="/about" class="middlelia"><sub><Image src={nlm} width ={16} height ={16} alt="aboutnlm"></Image></sub> About NLM</a></li>
-    <li><a href="https://linktr.ee/Negative_light" class="bottomlia"><sub><Image src={linktree} width ={16} height ={16} alt="linktree"></Image></sub> Linktree</a></li>
+    <li><a href="/"className="toplia">&#8962; <br/> Home</a></li>
+    <li><a href="https://discord.gg/CD8e5avNtn"className="middlelia"><sub><Image src={discord} width ={16} height ={16} alt="discord"></Image></sub> Discord</a></li>
+    <li><a href="mailto: code@negative-light.com" className="middlelia"><b>@</b><br/> Contact Email</a></li>
+    <li><a href="/about" className="middlelia"><sub><Image src={nlm} width ={16} height ={16} alt="aboutnlm"></Image></sub> About NLM</a></li>
+    <li><a href="https://linktr.ee/Negative_light" className="bottomlia"><sub><Image src={linktree} width ={16} height ={16} alt="linktree"></Image></sub> Linktree</a></li>
     </ul>
   </div>
   <footer>
