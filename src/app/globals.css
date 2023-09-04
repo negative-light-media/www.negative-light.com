@@ -237,6 +237,14 @@ body {
   display: table;
   clear: both;
 }
+.coffee {
+	height:40;
+	width:40;
+	margin:0;
+	padding:0
+	
+	
+}
 
     
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
