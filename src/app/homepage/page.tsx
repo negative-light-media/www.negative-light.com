@@ -6,7 +6,7 @@ function Home(){
   <>
   <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta charset="UTF-8"/>
+<meta charSet="UTF-8"/>
 <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
 <meta name="description" content="Official page for Negative Light Media "/>
 <meta name="keywords" content="NLM, media, negative-light, Negative_light, Minecraft, Youtube, Programming, Mods, modding"/>
@@ -21,45 +21,45 @@ function Home(){
     <h2><u>Negative Light Media </u></h2>
 	
   </header>
-  <div class="topnav">
+  <div className="topnav">
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
 </div>
-  <div class="container">
+  <div className="container">
 
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
+<div className="row">
+  <div className="leftcolumn">
+    <div className="card">
       <h2>TITLE HEADING</h2>
       <h5>Title description, Dec 7, 2023</h5>
-      <div class="fakeimg" height="200px">Image</div>
+      <div className="fakeimg">Image</div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
-    <div class="card">
+    <div className="card">
       <h2>TITLE HEADING</h2>
       <h5>Title description, Sep 2, 2023</h5>
-      <div class="fakeimg" height="200px">Image</div>
+      <div className="fakeimg">Image</div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
-  <div class="rightcolumn">
-    <div class="card">
+  <div className="rightcolumn">
+    <div className="card">
       <h2>About Me</h2>
-      <div class="fakeimg" height="100px">Image</div>
+      <div className="fakeimg">Image</div>
       <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
     </div>
-    <div class="card">
+    <div className="card">
       <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
+      <div className="fakeimg"><p>Image</p></div>
+      <div className="fakeimg"><p>Image</p></div>
+      <div className="fakeimg"><p>Image</p></div>
     </div>
-    <div class="card">
+    <div className="card">
       <h3>Follow Me</h3>
       <p>Some text..</p>
     </div>
