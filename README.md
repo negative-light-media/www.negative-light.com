@@ -1,7 +1,7 @@
 # negative-light.com
 
-This is the Negative-Light Website. Specificly for the Negative_light Youtube Channel.
-visit the site at: https://negative-light.com
+This is the Negative-Light Website. Specifically for the Negative_light Youtube Channel.
+Visit the site at: https://negative-light.com
 ## This project uses
 
 Node.js 18.17.1
@@ -13,24 +13,24 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 #### Getting Started
 -First install node.js (stable build: 18.17.1) and complete the installer msi
 
--Next, change directory to our repository:
+-Next, change the directory to our repository:
 
 ```bash
-cd C:\Users\...\Documents\GitHub\www.negative-light.com
+cd path\to\repo\...\www.negative-light.com
 ```
 -Then, update packages:
 
 ```bash
 npm install
 ```
-Then Finaly, run the development server:
+Then finally, run the development server:
 
 ```bash
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-if page will not display in browser make sure port 3000 is open, and you have admin(win) or superuser(linux) perms
+if the page will not display in the browser make sure port 3000 is open, and you have administrator privileges.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -53,11 +53,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ##### how to contribute
 
--before you contribute make sure to read CONTRIBUTING.md for guidelines
+-Before you contribute make sure to read CONTRIBUTING.md for guidelines
 
--report bugs in issues with the label "bug"
+-Report bugs in issues with the label "bug"
 
--open src html, js, typescript developers are welcome
+-Open src html, js, typescript developers are welcome
 
--join our community on discord [here](https://discord.gg/CD8e5avNtn)
+-join our community on Discord [here](https://discord.gg/CD8e5avNtn)
 
