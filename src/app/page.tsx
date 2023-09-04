@@ -26,14 +26,16 @@ function Home(){
     <h2><u>Negative Light Media</u></h2>
   </header>
   <div className="container">
+    
     <ul>
     <li><a href="/"className="toplia">&#8962; <br/> Home</a></li>
     <li><a href="https://discord.gg/CD8e5avNtn"className="middlelia"><sub><Image src={discord} width ={16} height ={16} alt="discord"></Image></sub> Discord</a></li>
     <li><a href="mailto: code@negative-light.com" className="middlelia"><b>@</b><br/> Contact Email</a></li>
     <li><a href="/about" className="middlelia"><sub><Image src={nlm} width ={16} height ={16} alt="aboutnlm"></Image></sub> About NLM</a></li>
     <li><a href="https://linktr.ee/Negative_light" className="bottomlia"><sub><Image src={linktree} width ={16} height ={16} alt="linktree"></Image></sub> Linktree</a></li>
-    </ul>
-  </div>
+	</ul>
+    <iframe src="https://discord.com/widget?id=942239085886574593&amp;theme=dark"  className="discordimbed"  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" ></iframe>
+ </div>
   <footer>
     <article>
       <h4>This website is under construction</h4>
