@@ -1,10 +1,20 @@
-import axios from 'axios';
-import { debug } from 'console';
-import React, { useEffect, useState } from 'react';
+import { type } from "os"
 
+const fs = require("fs")
 
+function getContributorsTable() {
+    const readmeFile = fs.readFileSync("README.md", 'utf8')
+    const tableStart = '<!-- readme: contributors -start -->'
+    const tableEnd = '<!-- readme: contributors -end -->'
 
-async function Home() {
+    const start = readmeFile.indexOf(tableStart)
+    const end = readmeFile.indexOf(tableEnd)
+
+    return readmeFile.substring(start + tableStart.length, end).trim()
+}
+
+function Home() {
+    const contributorTable = getContributorsTable()
     return <head>
         <meta charSet="UTF-8"/>
         <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
@@ -16,6 +26,9 @@ async function Home() {
         <title>negative-light.com</title>
         <body>
             <p>Hello There</p>
+            <div>
+                { contributorTable }
+            </div>
         </body>
     </head>
 }
