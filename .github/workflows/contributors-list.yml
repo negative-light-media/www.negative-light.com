@@ -3,7 +3,7 @@ name: Add contributors
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["development"]
 
 jobs:
   add-contributors:
