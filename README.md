@@ -66,3 +66,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 -join our community on Discord [here](https://discord.gg/CD8e5avNtn)
 
 ### Contributors
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
