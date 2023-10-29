@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - "*"
-      - "!development"
-      - "!main"
+    branches-ignore:
+      - "development"
+      - "main"
 
 jobs:
   add-contributors:
