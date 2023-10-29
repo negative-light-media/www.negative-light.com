@@ -20,7 +20,5 @@ jobs:
           IMG_WIDTH: "100"
           FONT_SIZE: "14"
           PATH: "/README.md"
-          PULL_REQUEST: "[CHORE] Update Contributors List"
-          BRANCH: "chore/contributors-list"
-          COMMIT_MESSAGE: "docs(README): update contributors"
+          COMMIT_MESSAGE: "chore: update contributors"
           AVATAR_SHAPE: "round"
