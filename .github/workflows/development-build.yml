@@ -7,7 +7,8 @@ name: Test Next.js Build
 on:
   # Runs on pushes targeting the default branch
   pull_request:
-    branches: ["development"]
+    branches:
+      - "development"
     paths:
       - "src/*"
 
