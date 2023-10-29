@@ -2,6 +2,7 @@
 
 This is the Negative-Light Website. Specifically for the Negative_light Youtube Channel.
 Visit the site at: https://negative-light.com
+
 ## This project uses
 
 Node.js 18.17.1
@@ -11,6 +12,7 @@ Node.js 18.17.1
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 #### Getting Started
+
 -First install node.js (stable build: 18.17.1) and complete the installer msi
 
 -Next, change the directory to our repository:
@@ -18,11 +20,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ```bash
 cd path\to\repo\...\www.negative-light.com
 ```
+
 -Then, update packages:
 
 ```bash
 npm install
 ```
+
 Then finally, run the development server:
 
 ```bash
@@ -61,3 +65,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 -join our community on Discord [here](https://discord.gg/CD8e5avNtn)
 
+### Contributors
