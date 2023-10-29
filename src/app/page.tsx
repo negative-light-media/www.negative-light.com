@@ -41,7 +41,11 @@ function Home(){
 	  <div className="coffee">
 	  <center><a href="http://www.buymeacoffee.com/widget/page/NegativeLight?description=Support%20me%20on%20Buy%20me%20a%20coffee!&color=%235d2f9d"><img src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="Buy Me A Coffee" ></img></a></center>
       </div>
-	</article>
+            </article>
+            <article>
+              <h5>Thank you to our contributors</h5>
+              <p><sub>Check them out</sub><a href='/contributors'>here</a></p>
+            </article>
   </footer>
 </center>
 </body>
