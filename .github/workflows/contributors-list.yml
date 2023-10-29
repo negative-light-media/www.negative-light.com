@@ -19,5 +19,6 @@ jobs:
           IMG_WIDTH: "100"
           FONT_SIZE: "14"
           PATH: "/README.md"
+          BRANCH: "chore/add-contributors"
           COMMIT_MESSAGE: "chore: update contributors"
           AVATAR_SHAPE: "round"
