@@ -1,21 +1,30 @@
-import { type } from "os"
+import { Octokit } from "octokit";
+import Image from "next/image";
+import github_logo from 'src/img/github-mark-white.svg'
 
-const fs = require("fs")
 
-function getContributorsTable() {
-    const readmeFile = fs.readFileSync("README.md", 'utf8')
-    const tableStart = '<!-- readme: contributors -start -->'
-    const tableEnd = '<!-- readme: contributors -end -->'
+async function getContributorsWeb() {
+    const token = process.env.GITHUB_TOKEN
+    const octokit = new Octokit({
+        auth: token
+    })
 
-    const start = readmeFile.indexOf(tableStart)
-    const end = readmeFile.indexOf(tableEnd)
+    const response = await octokit.request('GET /repos/{owner}/{repo}/contributors', {
+        owner: "negative-light-media",
+        repo: 'www.negative-light.com',
+    })
 
-    return readmeFile.substring(start + tableStart.length, end).trim()
+
+    return response.data
 }
 
-function Home() {
-    const contributorTable = getContributorsTable()
-    console.log(contributorTable)
+
+
+async function Home() {
+    
+    //const data = contributorTable.match(/<sub><b>(.*)<\/b>/g)
+    const contributors = await getContributorsWeb()
+    const profile_size = 256
     return (
         <>
             <head>
@@ -35,22 +44,37 @@ function Home() {
                         <h2><u>Contributors</u></h2>
                         <sub><a href="/">Home</a></sub>
                     </header>
-                
+                    <h1>A Special Thanks to our {contributors.length} Contributors</h1>
                     <div className="container">
-                        <ul>
-                        <br/>
-                        <li>Special Thanks to our Contributors</li>
-                        {contributorTable ? <div dangerouslySetInnerHTML={{ __html: contributorTable }} /> :
-                                <span>
-                                    Contributors Now Found please create an issue on our <a href="https://github.com/negative-light-media/www.negative-light.com/issues">github</a> </span>
-                            }
-                            
-                        </ul>
+                        
+                        <br />
+                        <table width={100 + '%'}>
+                            <tr>
+                                <th>Profile Picture</th>
+                                <th>Username</th>
+                                <th>Contributions</th>
+                                <th>Github</th>
+                            </tr>
+                            {contributors.map(contributor => ((
+                                <tr key={contributor.id}>
+                                    <td align="center">
+                                        <Image src={contributor.avatar_url} width={profile_size} height={profile_size} alt={contributor.login + "Profile Picture"}></Image>
+                                    </td>
+                                    <td align="center">{contributor.login}</td>
+                                    <td align="center">{contributor.contributions}</td>
+                                    <td align="center">
+                                        <a href={contributor.html_url}>
+                                            <Image src={github_logo} width={profile_size} height={profile_size} alt={contributor.login + "Profile Github"}></Image>
+                                        </a>
+                                    </td>
+                                </tr>
+                            )))}
+                        </table>
                     </div>
                     <footer>
                         <article>
                             <h4>This website is under construction</h4>
-                            <p><sub>Check our github for details <a href="https://github.com/negative-light-media/www.negative-light.com"><u color="blue">here</u></a></sub></p>
+                            <p><sub>Check our github for details <a href=""><u color="blue">here</u></a></sub></p>
 
                         </article>
                     </footer>
