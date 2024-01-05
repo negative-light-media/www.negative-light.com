@@ -30,7 +30,8 @@ If you are curious about joining NLM a good first place is our discord so that y
 </div>
 <footer>
     <article>
-      <h4>This website is under construction</h4>
+             <h4>This website is under construction</h4>
+	  <h4>Thank you to our <a href='/contributors'><u>Contributors</u></a></h4>
       <p><sub>Check our github for details <a href="https://github.com/negative-light-media/www.negative-light.com"><u color="blue">here</u></a></sub></p>
     </article>
   </footer>

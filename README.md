@@ -66,3 +66,30 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 -join our community on Discord [here](https://discord.gg/CD8e5avNtn)
 
 ### Contributors
+
+<!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/Negative-light">
+            <img src="https://avatars.githubusercontent.com/u/53065989?v=4" width="100;" alt="Negative-light"/>
+            <br />
+            <sub><b>Negative_light</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/crazysmile11012">
+            <img src="https://avatars.githubusercontent.com/u/107813207?v=4" width="100;" alt="crazysmile11012"/>
+            <br />
+            <sub><b>Nathaniel Hartlen </b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/sourabh1111111">
+            <img src="https://avatars.githubusercontent.com/u/128641566?v=4" width="100;" alt="sourabh1111111"/>
+            <br />
+            <sub><b>Sourabh Sharma</b></sub>
+        </a>
+    </td></tr>
+</table>
+<!-- readme: contributors -end -->
