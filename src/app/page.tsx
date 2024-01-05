@@ -5,7 +5,6 @@ import linktree from'src/img/linktree.svg'
 import { Octokit } from "octokit";
 import github_logo from 'src/img/github-mark-white.svg'
 const contributors = await getContributorsWeb()
-var metavar2 = []
 async function getContributorsWeb() {
     const token = process.env.GITHUB_TOKEN
     const octokit = new Octokit({
@@ -22,6 +21,7 @@ async function getContributorsWeb() {
 }
 
 function Home(){
+var metavar2 = []
 
   return (
   <>
