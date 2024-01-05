@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Octokit } from "octokit";
 import github_logo from 'src/img/github-mark-white.svg'
 const contributors = await getContributorsWeb()
-var metavar3 = []
+
 async function getContributorsWeb() {
     const token = process.env.GITHUB_TOKEN
     const octokit = new Octokit({
@@ -20,7 +20,7 @@ async function getContributorsWeb() {
 
 function Home(){
 
-
+var metavar3 = []
   return (
   <>
   <head>
@@ -42,7 +42,6 @@ function Home(){
 			
 			<tr key={metavar3 = metavar3 + contributor.login + ", "}></tr>
 			
-		
 			
 			)))}
 			</tbody>
