@@ -2,7 +2,6 @@ import { Octokit } from "octokit";
 import Image from "next/image";
 import github_logo from 'src/img/github-mark-white.svg'
 
-
 async function getContributorsWeb() {
     const token = process.env.GITHUB_TOKEN
     const octokit = new Octokit({
@@ -24,7 +23,7 @@ async function Home() {
     
     //const data = contributorTable.match(/<sub><b>(.*)<\/b>/g)
     const contributors = await getContributorsWeb()
-    const profile_size = 256
+    const profile_size = 128
     return (
         <>
             <head>
@@ -48,15 +47,10 @@ async function Home() {
                     <div className="container">
                         
                         <br />
-                        <table width={100 + '%'}>
-                            <tr>
-                                <th>Profile Picture</th>
-                                <th>Username</th>
-                                <th>Contributions</th>
-                                <th>Github</th>
-                            </tr>
+                        <table width={50 + '%'}>
+                            <tbody>
                             {contributors.map(contributor => ((
-                                <tr key={contributor.id}>
+                                <tr>
                                     <td align="center">
                                         <Image src={contributor.avatar_url} width={profile_size} height={profile_size} alt={contributor.login + "Profile Picture"}></Image>
                                     </td>
@@ -69,7 +63,9 @@ async function Home() {
                                     </td>
                                 </tr>
                             )))}
+                            </tbody>
                         </table>
+                        
                     </div>
                     <footer>
                         <article>
