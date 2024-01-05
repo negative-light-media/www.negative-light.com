@@ -51,7 +51,7 @@ async function Home() {
                         <table width={50 + '%'}>
                             <tbody>
                             {contributors.map(contributor => ((
-                                <tr>
+                                <tr key={contributor.login}>
                                     <td align="center">
                                         <Image src={contributor.avatar_url} width={profile_size} height={profile_size} alt={contributor.login + "Profile Picture"}></Image>
                                     </td>
