@@ -36,8 +36,9 @@ function Home(){
   <footer>
     <article>
               <h4>This website is under construction</h4>
+			  <h4>Thank you to our <a href='/contributors'><u>Contributors</u></a> </h4>
               <p><sub>Check our github for details <a href="https://github.com/negative-light-media/www.negative-light.com"><u color="blue">here</u></a></sub></p>
-              <h4>Thank you to our <a href='/contributors'><u>Contributors</u></a> </h4>
+              
       </article>
   </footer>
 </center>
