@@ -1,3 +1,6 @@
+**NOTE THIS ARE DUE TO CHANGE**
+
+I Negative_light am new to how to manage these projects so any advice avalible is much appreciated
 # CONTRIBUTING to www.negative-light.com
 
 For general contributing instructions please look at the [Negative Light Media Contributing](https://github.com/negative-light-media/.github/blob/main/CONTRIBUTING.md). This file provides provisions specific to this repository.

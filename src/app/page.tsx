@@ -4,7 +4,6 @@ import nlm from 'src/img/favicon.png'
 import linktree from'src/img/linktree.svg'
 function Home(){
 
-
   return (
   <>
 <head>
@@ -23,7 +22,7 @@ function Home(){
 <body>
 <center>
   <header>
-    <h2><u>Negative Light Media</u></h2>
+    <h2><u>Negative Light</u></h2>
   </header>
   <div className="container">
     <ul>
@@ -36,12 +35,11 @@ function Home(){
   </div>
   <footer>
     <article>
-      <h4>This website is under construction</h4>
-      <p><sub>Check our github for details <a href="https://github.com/negative-light-media/www.negative-light.com"><u color="blue">here</u></a></sub></p>
-	  <div className="coffee">
-	  <center><a href="http://www.buymeacoffee.com/widget/page/NegativeLight?description=Support%20me%20on%20Buy%20me%20a%20coffee!&color=%235d2f9d"><img src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="Buy Me A Coffee" ></img></a></center>
-      </div>
-	</article>
+              <h4>This website is under construction</h4>
+			  <h4>Thank you to our <a href='/contributors'><u>Contributors</u></a> </h4>
+              <p><sub>Check our github for details <a href="https://github.com/negative-light-media/www.negative-light.com"><u color="blue">here</u></a></sub></p>
+              
+      </article>
   </footer>
 </center>
 </body>
