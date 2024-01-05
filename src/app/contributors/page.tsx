@@ -40,10 +40,11 @@ async function Home() {
             <body>
                 <center>
                     <header>
-                        <h2><u>Contributors</u></h2>
-                        <sub><a href="/">Home</a></sub>
+                        <h2><u>negative-light website Contributors</u></h2>
+                        
                     </header>
                     <h1>A Special Thanks to our {contributors.length} Contributors</h1>
+					<h2>Join the <a href=""><u color="blue">github</u></a> to be on the Contributors page</h2>
                     <div className="container">
                         
                         <br />
@@ -70,8 +71,9 @@ async function Home() {
                     <footer>
                         <article>
                             <h4>This website is under construction</h4>
-                            <p><sub>Check our github for details <a href=""><u color="blue">here</u></a></sub></p>
-
+							<h4><a href="/">Back to Homepage</a></h4>
+                            
+							
                         </article>
                     </footer>
                 </center>
