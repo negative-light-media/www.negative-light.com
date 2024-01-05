@@ -2,6 +2,25 @@ import Image from 'next/image'
 import discord from 'src/img/discord.svg'
 import nlm from 'src/img/favicon.png'
 import linktree from'src/img/linktree.svg'
+import { Octokit } from "octokit";
+import github_logo from 'src/img/github-mark-white.svg'
+const contributors = await getContributorsWeb()
+var metavar2 = []
+async function getContributorsWeb() {
+    const token = process.env.GITHUB_TOKEN
+    const octokit = new Octokit({
+        auth: token
+    })
+
+    const response = await octokit.request('GET /repos/{owner}/{repo}/contributors', {
+        owner: "negative-light-media",
+        repo: 'www.negative-light.com',
+    })
+
+
+    return response.data
+}
+
 function Home(){
 
   return (
@@ -14,12 +33,26 @@ function Home(){
 <meta name="description" content="Official page for Negative Light Media "></meta>
 <meta name="keywords" content="NLM, media, negative-light, Negative_light, Minecraft, Youtube, Programming, Mods, modding"></meta>
 <meta name="author" content="Negative-light"></meta>
-<meta name="contributors" content="sourabh1111111, crazysmile11012"></meta>
 <meta name="publisher" content="Negative-light-media"></meta>
 <title>negative-light.com</title>
 
 </head>
 <body>
+<div className="metabuilder">
+			<table>
+			<tbody>
+			{contributors.map(contributor => ((
+			
+			
+			<tr key={metavar2 = metavar2 + contributor.login + ", "}></tr>
+			
+		
+			
+			)))}
+			</tbody>
+			</table>
+			</div>
+			<meta name="contributors" content={metavar2} />
 <center>
   <header>
     <h2><u>Negative Light</u></h2>

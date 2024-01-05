@@ -24,20 +24,40 @@ async function Home() {
     //const data = contributorTable.match(/<sub><b>(.*)<\/b>/g)
     const contributors = await getContributorsWeb()
     const profile_size = 128
+	var metavar = []
     return (
         <>
             <head>
+			
+			
                 <meta name="viewport" content="width-device-width, initial-scale-1" />
                 <meta charSet="UTF-8" />
                 <link rel="icon" type="image/x-icon" href="img/favicon.png" />
                 <meta name="description" content="Contributors List for Negative Light Media " />
+				
                 <meta name="keywords" content="NLM, media, negative-light, Negative_light, Minecraft, Youtube, Programming, Mods, modding" />
                 <meta name="author" content="Negative-light" />
-                <meta name="contributors" content="sourabh1111111, crazysmile11012" />
+                
                 <meta name="publisher" content="Negative-light-media" />
                 <title>negative-light.com</title>
+				
             </head>
             <body>
+			<div className="metabuilder">
+			<table>
+			<tbody>
+			{contributors.map(contributor => ((
+			
+			
+			<tr key={metavar = metavar + contributor.login + ", "}></tr>
+			
+		
+			
+			)))}
+			</tbody>
+			</table>
+			</div>
+			<meta name="contributors" content={metavar} />
                 <center>
                     <header>
                         <h2><u>negative-light website Contributors</u></h2>
@@ -52,6 +72,7 @@ async function Home() {
                             <tbody>
                             {contributors.map(contributor => ((
                                 <tr key={contributor.login}>
+									
                                     <td align="center">
                                         <Image src={contributor.avatar_url} width={profile_size} height={profile_size} alt={contributor.login + "Profile Picture"}></Image>
                                     </td>
@@ -61,6 +82,7 @@ async function Home() {
                                         <a href={contributor.html_url}>
                                             <Image src={github_logo} width={profile_size} height={profile_size} alt={contributor.login + "Profile Github"}></Image>
                                         </a>
+										
                                     </td>
                                 </tr>
                             )))}
@@ -70,6 +92,8 @@ async function Home() {
                     </div>
                     <footer>
                         <article>
+										
+
                             <h4>This website is under construction</h4>
 							<h4><a href="/">Back to Homepage</a></h4>
                             
