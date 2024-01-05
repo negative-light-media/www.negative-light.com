@@ -8,9 +8,7 @@ on:
   # Runs on pushes targeting the default branch
   pull_request:
     branches:
-      - "development"
-    paths:
-      - "src/*"
+      - "main"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
