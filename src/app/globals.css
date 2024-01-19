@@ -45,6 +45,13 @@ h1 {
   font-size: 2.5rem;
 }
 
+h3 {
+  font-size: 2.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  padding: 1rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -94,7 +101,11 @@ ul {
   border: 2px solid #5d2f9d;
 }
 
-li a {
+.socialName {
+  padding-left: 1rem;
+}
+
+div a {
   margin: 2;
   display: block;
   border-radius: 10px;
@@ -106,7 +117,7 @@ li a {
 }
 
 /* Change the link color on hover */
-li a:hover {
+div a:hover {
   background-color: #555;
   color: white;
   transform: translatey(-5px);
