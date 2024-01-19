@@ -3,17 +3,14 @@ import { Octokit } from "octokit";
 import github_logo from 'src/img/github-mark-white.svg'
 import { getContributors } from '../utils';
 
+async function Home(){
+  const contributors = await getContributors();
+  var contributorNames = "";
 
 async function Home(){
   const contributors = await getContributors();
   var contributorNames = "";
 
-    return response.data
-}
-
-function Home(){
-
-var metavar3 = []
   return (
   <>
   <head>
