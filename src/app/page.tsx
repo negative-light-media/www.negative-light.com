@@ -2,26 +2,16 @@ import Image from 'next/image'
 import discord from 'src/img/discord.svg'
 import nlm from 'src/img/favicon.png'
 import linktree from'src/img/linktree.svg'
-import { Octokit } from "octokit";
+
+
+import { cache } from 'react'
 import github_logo from 'src/img/github-mark-white.svg'
-const contributors = await getContributorsWeb()
-async function getContributorsWeb() {
-    const token = process.env.GITHUB_TOKEN
-    const octokit = new Octokit({
-        auth: token
-    })
+import { getContributors } from './utils'
 
-    const response = await octokit.request('GET /repos/{owner}/{repo}/contributors', {
-        owner: "negative-light-media",
-        repo: 'www.negative-light.com',
-    })
+async function Home() {
+  const contributors = await getContributors();
+  var contributorNames = "";
 
-
-    return response.data
-}
-
-function Home(){
-var metavar2 = []
 
   return (
   <>
@@ -44,7 +34,9 @@ var metavar2 = []
 			{contributors.map(contributor => ((
 			
 			
-			<tr key={metavar2 = metavar2 + contributor.login + ", "}></tr>
+
+			<tr key={contributorNames = contributorNames + contributor.login + ", "}></tr>
+
 			
 		
 			
@@ -52,7 +44,9 @@ var metavar2 = []
 			</tbody>
 			</table>
 			</div>
-			<meta name="contributors" content={metavar2} />
+
+			<meta name="contributors" content={contributorNames} />
+
 <center>
   <header>
     <h2><u>Negative Light</u></h2>
