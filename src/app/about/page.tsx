@@ -7,10 +7,6 @@ async function Home(){
   const contributors = await getContributors();
   var contributorNames = "";
 
-async function Home(){
-  const contributors = await getContributors();
-  var contributorNames = "";
-
   return (
   <>
   <head>
