@@ -3,10 +3,17 @@ import { Octokit } from "octokit";
 import github_logo from 'src/img/github-mark-white.svg'
 import { getContributors } from '../utils';
 
+
 async function Home(){
   const contributors = await getContributors();
   var contributorNames = "";
 
+    return response.data
+}
+
+function Home(){
+
+var metavar3 = []
   return (
   <>
   <head>
@@ -25,14 +32,16 @@ async function Home(){
 			<tbody>
 			{contributors.map(contributor => ((
 			
+
 			<tr key={contributorNames = contributorNames + contributor.login + ", "}></tr>
-			
-			
+
 			)))}
 			</tbody>
 			</table>
 			</div>
+
 			<meta name="contributors" content={contributorNames} />
+
 <center>
   <header>
     <h2><u>Negative Light Media - About</u></h2>

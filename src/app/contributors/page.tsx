@@ -10,9 +10,11 @@ import { getContributors } from "../utils";
 async function Home() {
     
     //const data = contributorTable.match(/<sub><b>(.*)<\/b>/g)
+
     const contributors = await getContributors();
     const profile_size = 128;
     var contributorNames = "";
+
     return (
         <>
             <head>
@@ -37,7 +39,9 @@ async function Home() {
 			{contributors.map(contributor => ((
 			
 			
+
 			<tr key={contributorNames = contributorNames + contributor.login + ", "}></tr>
+
 			
 		
 			
@@ -45,7 +49,9 @@ async function Home() {
 			</tbody>
 			</table>
 			</div>
+
 			<meta name="contributors" content={contributorNames} />
+
                 <center>
                     <header>
                         <h2><u>negative-light website Contributors</u></h2>
