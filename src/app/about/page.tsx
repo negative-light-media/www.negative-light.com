@@ -1,26 +1,12 @@
 import Image from 'next/image'
 import { Octokit } from "octokit";
 import github_logo from 'src/img/github-mark-white.svg'
-const contributors = await getContributorsWeb()
+import { getContributors } from '../utils';
 
-async function getContributorsWeb() {
-    const token = process.env.GITHUB_TOKEN
-    const octokit = new Octokit({
-        auth: token
-    })
+async function Home(){
+  const contributors = await getContributors();
+  var contributorNames = "";
 
-    const response = await octokit.request('GET /repos/{owner}/{repo}/contributors', {
-        owner: "negative-light-media",
-        repo: 'www.negative-light.com',
-    })
-
-
-    return response.data
-}
-
-function Home(){
-
-var metavar3 = []
   return (
   <>
   <head>
@@ -39,15 +25,14 @@ var metavar3 = []
 			<tbody>
 			{contributors.map(contributor => ((
 			
-			
-			<tr key={metavar3 = metavar3 + contributor.login + ", "}></tr>
+			<tr key={contributorNames = contributorNames + contributor.login + ", "}></tr>
 			
 			
 			)))}
 			</tbody>
 			</table>
 			</div>
-			<meta name="contributors" content={metavar3} />
+			<meta name="contributors" content={contributorNames} />
 <center>
   <header>
     <h2><u>Negative Light Media - About</u></h2>
@@ -71,5 +56,5 @@ If you are curious about joining NLM a good first place is our discord so that y
 </body>
   </>
   );
-  }
+}
   export default Home;

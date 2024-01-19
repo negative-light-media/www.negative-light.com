@@ -1,30 +1,18 @@
 import { Octokit } from "octokit";
 import Image from "next/image";
 import github_logo from 'src/img/github-mark-white.svg'
-
-async function getContributorsWeb() {
-    const token = process.env.GITHUB_TOKEN
-    const octokit = new Octokit({
-        auth: token
-    })
-
-    const response = await octokit.request('GET /repos/{owner}/{repo}/contributors', {
-        owner: "negative-light-media",
-        repo: 'www.negative-light.com',
-    })
+import { getContributors } from "../utils";
 
 
-    return response.data
-}
 
 
 
 async function Home() {
     
     //const data = contributorTable.match(/<sub><b>(.*)<\/b>/g)
-    const contributors = await getContributorsWeb()
-    const profile_size = 128
-	var metavar = []
+    const contributors = await getContributors();
+    const profile_size = 128;
+    var contributorNames = "";
     return (
         <>
             <head>
@@ -49,7 +37,7 @@ async function Home() {
 			{contributors.map(contributor => ((
 			
 			
-			<tr key={metavar = metavar + contributor.login + ", "}></tr>
+			<tr key={contributorNames = contributorNames + contributor.login + ", "}></tr>
 			
 		
 			
@@ -57,7 +45,7 @@ async function Home() {
 			</tbody>
 			</table>
 			</div>
-			<meta name="contributors" content={metavar} />
+			<meta name="contributors" content={contributorNames} />
                 <center>
                     <header>
                         <h2><u>negative-light website Contributors</u></h2>
