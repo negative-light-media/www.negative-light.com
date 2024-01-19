@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import { Octokit } from "octokit";
 import github_logo from 'src/img/github-mark-white.svg'
-
 import { getContributors } from '../utils';
 
 async function Home(){
   const contributors = await getContributors();
   var contributorNames = "";
 
+async function Home(){
+  const contributors = await getContributors();
+  var contributorNames = "";
 
   return (
   <>
@@ -30,8 +32,6 @@ async function Home(){
 
 			<tr key={contributorNames = contributorNames + contributor.login + ", "}></tr>
 
-			
-			
 			)))}
 			</tbody>
 			</table>

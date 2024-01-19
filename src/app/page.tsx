@@ -3,6 +3,7 @@ import discord from 'src/img/discord.svg'
 import nlm from 'src/img/favicon.png'
 import linktree from'src/img/linktree.svg'
 
+
 import { cache } from 'react'
 import github_logo from 'src/img/github-mark-white.svg'
 import { getContributors } from './utils'
@@ -10,6 +11,7 @@ import { getContributors } from './utils'
 async function Home() {
   const contributors = await getContributors();
   var contributorNames = "";
+
 
   return (
   <>
@@ -32,15 +34,18 @@ async function Home() {
 			{contributors.map(contributor => ((
 			
 			
+
 			<tr key={contributorNames = contributorNames + contributor.login + ", "}></tr>
-			
+
 		
 			
 			)))}
 			</tbody>
 			</table>
 			</div>
+
 			<meta name="contributors" content={contributorNames} />
+
 <center>
   <header>
     <h2><u>Negative Light</u></h2>
