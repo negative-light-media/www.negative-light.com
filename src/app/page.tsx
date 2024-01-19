@@ -37,7 +37,6 @@ async function Home() {
 
 			<tr key={contributorNames = contributorNames + contributor.login + ", "}></tr>
 
-			
 		
 			
 			)))}

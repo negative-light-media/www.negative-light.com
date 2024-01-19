@@ -14,7 +14,6 @@ async function Home() {
     const contributors = await getContributors();
     const profile_size = 128;
     var contributorNames = "";
-
     return (
         <>
             <head>
