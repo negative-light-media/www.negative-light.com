@@ -1,12 +1,15 @@
-import "./globals.css";
+import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Negative_light.com",
-  description: "The official Website of Negative_light",
+  title: "Negative Light Media Landing",
+  description:
+    "This is the landing page of Negative Light media and all of its projects",
+  generator: "Next.js",
+  authors: [{ name: "Negative_light" }],
 };
 
 export default function RootLayout({

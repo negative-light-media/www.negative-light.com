@@ -111,7 +111,7 @@ li a:hover {
   color: white;
   transform: translatey(-5px);
 }
-.middlelia {
+.linksList a {
   background-color: #333;
   margin: 2;
   display: block;
@@ -122,7 +122,8 @@ li a:hover {
   transition: background-color 0.3s, color 0.3s;
   border: 1px solid #950086;
 }
-.toplia {
+
+.linksList:first-of-type a {
   margin: 2;
   display: block;
   border-top-left-radius: 10px;
@@ -136,7 +137,7 @@ li a:hover {
   transition: background-color 0.3s, color 0.3s;
   border: 1px solid #950086;
 }
-.bottomlia {
+.linksList:last-of-type a {
   margin: 2;
   display: block;
   border-top-left-radius: 1px;
